@@ -70,6 +70,16 @@
     }
   });
 
+  // Make hero text fade out on scroll
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > 100) {
+      $("#i-am-hero").css("opacity", 1 - $(window).scrollTop() / $('#i-am-hero').height() /  2);
+    }
+    else {
+        $('#i-am-hero').css("opacity", 1);
+    }
+});
+
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');

@@ -322,6 +322,13 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background: url("../img/mainBackground2.JPG") center;
     background-position-y: 80%;
+    background-size: cover;
+  }
+  #hero2 {
+    background-size: cover;
+  }
+  #hero3 {
+    background-size: cover;
   }
 }
 

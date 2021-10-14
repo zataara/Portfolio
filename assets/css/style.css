@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
   }
   #hero {
-    background: url("../img/mobileBackground1.JPG") center;
+    background: url("../img/mobileBackground3.JPG") center;
     background-position-y: 1%;
     background-size: cover;
   }
@@ -332,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
   }
   #hero3 {
-    background: url("../img/mobileBackground3.JPG") center;
+    background: url("../img/mobileBackground1.JPG") center;
     background-size: cover;
   }
   #hero4 {

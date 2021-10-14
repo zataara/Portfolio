@@ -1060,9 +1060,9 @@ section {
 }
 
 .arrow {
-  color: white;
+  color: #149ddd;
   white-space: nowrap;
-  font-size: 4rem;
+  font-size: 5rem;
   position: absolute;
   right: 0;
   bottom: 50px;

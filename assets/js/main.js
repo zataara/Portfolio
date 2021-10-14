@@ -80,6 +80,16 @@
     }
 });
 
+  // Make hero text fade out on scroll
+  $(window).bind('scroll', function() {
+    if ($(window).scrollTop() > 100) {
+      $("#arrow").css("opacity", 1 - $(window).scrollTop() / $('#arrow').height() /  2);
+    }
+    else {
+        $('#arrow').css("opacity", 1);
+    }
+});
+
   // Navigation active state on scroll
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
@@ -182,6 +192,19 @@
     loop: true,
     items: 1
   });
+
+  var arrowBounce = function() {
+    var arrow = $(".arrow");
+    
+    if (arrow.hasClass("lift")) {
+      arrow.removeClass("lift");
+    } else {
+      arrow.addClass("lift");
+    }
+  };
+  
+  // run the arrowBounce function every 800ms
+  setInterval(arrowBounce, 800);
 
   // Init AOS
   function aos_init() {

@@ -226,6 +226,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 120vh;
   background: url("../img/mainBackground.JPG") center center;
   background-size: cover;
+  background-position-x: center;
+  background-position-y: 25%;
   background-attachment: fixed;
 
 }
@@ -235,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 120vh;
   background: url("../img/mainBackground3.JPG");
   background-position-x: center;
-  background-position-y: 75%;
+  background-position-y: 25%;
   background-attachment: fixed;
 }
 
@@ -289,7 +291,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   #hero {
     background-attachment: fixed;
     left: -300px;
@@ -301,6 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero3 {
     background-attachment: fixed;
+    background-position-y: -300px;
   }
   
 }
@@ -320,14 +323,20 @@ h1, h2, h3, h4, h5, h6 {
     top: 0px;
   }
   #hero {
-    background: url("../img/mainBackground2.JPG") center;
-    background-position-y: 80%;
+    background: url("../img/mobileBackground1.JPG") center;
+    background-position-y: 1%;
     background-size: cover;
   }
   #hero2 {
+    background: url("../img/mobileBackground2.JPG") center;
     background-size: cover;
   }
   #hero3 {
+    background: url("../img/mobileBackground3.JPG") center;
+    background-size: cover;
+  }
+  #hero4 {
+    background: url("../img/mobileBackground4.JPG") center;
     background-size: cover;
   }
 }
@@ -1049,3 +1058,28 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+.arrow {
+  color: white;
+  white-space: nowrap;
+  font-size: 4rem;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  transform: translateY(0);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 750ms ease-in-out;
+  -ms-transition: all 750ms ease-in-out;
+  -o-transition: all 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
+}
+
+/* this sets the position of the arrow when it's up, so it will move up or down by 14px when you add or remove this class */
+.lift {
+  transform: translateY(14px);
+}
+
